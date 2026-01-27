@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1.7
+
 # Team Flags EDU - Production-Grade Dockerfile
 # Multi-stage build for optimal image size and security
 # This Dockerfile demonstrates DevSecOps best practices
@@ -38,7 +40,11 @@ ENV SKIP_ENV_VALIDATION=true
 
 # Build the Next.js application
 # This creates an optimized production build
-RUN npm run build
+#RUN npm run build
+RUN --mount=type=secret,id=gcp_sa_json \
+    export FIREBASE_SERVICE_ACCOUNT_JSON="$(cat /run/secrets/gcp_sa_json)" && \
+    npm run build
+
 
 # ============================================
 # Stage 3: Runner (Final Production Image)
