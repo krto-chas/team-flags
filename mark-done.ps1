@@ -19,8 +19,8 @@ if (-not (Test-Path $readmePath)) {
 $content = Get-Content $readmePath -Raw
 $lines = Get-Content $readmePath
 
-# Hitta alla checkboxar (inkl. ✅ utan brackets)
-$checkboxPattern = "^- (\[[ x]\]|✅) .+"
+# Hitta alla checkboxar (inkl. ✅ utan bullet)
+$checkboxPattern = "^(- \[[ x]\]|✅) .+"
 $tasks = @()
 $lineNumbers = @()
 
@@ -37,7 +37,7 @@ if ($List -or $TaskNumber -eq 0) {
     for ($i = 0; $i -lt $tasks.Count; $i++) {
         $num = $i + 1
         $task = $tasks[$i]
-        if ($task -match "^- ✅") {
+        if ($task -match "^✅") {
             Write-Host "  $num. $task" -ForegroundColor Green
         } elseif ($task -match "\x\") {
             Write-Host "  $num. $task" -ForegroundColor Green
@@ -63,12 +63,12 @@ $lineIndex = $lineNumbers[$index]
 $originalLine = $lines[$lineIndex]
 
 if ($Undo) {
-    # Avmarkera: ändra ✅ eller [x] till [ ]
-    $newLine = $originalLine -replace "^- ✅", "- [ ]" -replace "\[x\]", "[ ]"
+    # Avmarkera: ändra ✅ till - [ ]
+    $newLine = $originalLine -replace "^✅", "- [ ]" -replace "\[x\]", "[ ]"
     $action = "avmarkerad"
 } else {
-    # Markera: ändra [ ] till ✅
-    $newLine = $originalLine -replace "\[ \]", "✅"
+    # Markera: ändra - [ ] till ✅
+    $newLine = $originalLine -replace "^- \[ \]", "✅"
     $action = "markerad som klar"
 }
 

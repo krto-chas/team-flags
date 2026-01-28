@@ -89,44 +89,44 @@ This Dockerfile showcases production-ready patterns:
 
 ## 🔒 Security Features
 
-✅ Non-root container user
-✅ Minimal attack surface (Alpine base)
-✅ No secrets in image (environment variables only)
-✅ Dependency vulnerability scanning ready
-✅ SBOM generation compatible
+- ✅ Non-root container user
+- ✅ Minimal attack surface (Alpine base)
+- ✅ No secrets in image (environment variables only)
+- ✅ Dependency vulnerability scanning ready
+- ✅ SBOM generation compatible
 
 ## 📖 Learning Path
 
 ### Week 2: Container Basics
-✅ Fork this repository
-✅ Run locally without Docker
-✅ Write your first Dockerfile (use ours as reference)
-✅ Build and run a Docker container
-✅ Understand multi-stage builds
+- [✅] Fork this repository
+- [✅] Run locally without Docker
+- [✅] Write your first Dockerfile (use ours as reference)
+- [✅] Build and run a Docker container
+- [✅] Understand multi-stage builds
 
 ### Week 3-4: CI/CD Pipeline
-[ ] Set up GitHub Actions
-[ ] Automate Docker builds
-[ ] Add linting and testing
-[ ] Deploy to a container registry
+- [ ] Set up GitHub Actions
+- [ ] Automate Docker builds
+- [ ] Add linting and testing
+- [ ] Deploy to a container registry
 
 ### Week 5-6: Security Integration
-[ ] Add Trivy container scanning
-[ ] Implement dependency checks
-[ ] Generate SBOM
-[ ] Configure security gates
+- [ ] Add Trivy container scanning
+- [ ] Implement dependency checks
+- [ ] Generate SBOM
+- [ ] Configure security gates
 
 ### Week 7-8: Kubernetes Deployment
-[ ] Create Kubernetes manifests
-[ ] Deploy to local cluster (kind/minikube)
-[ ] Implement OPA Gatekeeper policies
-[ ] Set up runtime security (Falco)
+- [ ] Create Kubernetes manifests
+- [ ] Deploy to local cluster (kind/minikube)
+- [ ] Implement OPA Gatekeeper policies
+- [ ] Set up runtime security (Falco)
 
 ### Week 9-10: SRE & Operations
-[ ] Define SLIs/SLOs
-[ ] Set up monitoring and alerting
-[ ] Write runbooks
-[ ] Practice incident response
+- [ ] Define SLIs/SLOs
+- [ ] Set up monitoring and alerting
+- [ ] Write runbooks
+- [ ] Practice incident response
 
 ## 🛠️ Common Commands
 
