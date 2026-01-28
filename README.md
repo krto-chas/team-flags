@@ -89,11 +89,11 @@ This Dockerfile showcases production-ready patterns:
 
 ## 🔒 Security Features
 
-- [ ] Non-root container user
-- [ ] Minimal attack surface (Alpine base)
-- [ ] No secrets in image (environment variables only)
-- [ ] Dependency vulnerability scanning ready
-- [ ] SBOM generation compatible
+- ✅ Non-root container user
+- ✅ Minimal attack surface (Alpine base)
+- ✅ No secrets in image (environment variables only)
+- ✅ Dependency vulnerability scanning ready
+- ✅ SBOM generation compatible
 
 ## 📖 Learning Path
 
@@ -105,13 +105,13 @@ This Dockerfile showcases production-ready patterns:
 - [✅] Understand multi-stage builds
 
 ### Week 3-4: CI/CD Pipeline
-- [ ] Set up GitHub Actions
-- [ ] Automate Docker builds
-- [ ] Add linting and testing
-- [ ] Deploy to a container registry
+- ✅ Set up GitHub Actions
+- ✅ Automate Docker builds
+- ✅ Add linting and testing
+- ✅ Deploy to a container registry
 
 ### Week 5-6: Security Integration
-- [ ] Add Trivy container scanning
+- ✅ Add Trivy container scanning
 - [ ] Implement dependency checks
 - [ ] Generate SBOM
 - [ ] Configure security gates
