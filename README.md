@@ -112,7 +112,7 @@ This Dockerfile showcases production-ready patterns:
 
 ### Week 5-6: Security Integration
 - [ ] Add Trivy container scanning
-- [ ] Implement dependency checks
+✅ Implement dependency checks
 - [ ] Generate SBOM
 - [ ] Configure security gates
 
