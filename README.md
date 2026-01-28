@@ -98,11 +98,11 @@ This Dockerfile showcases production-ready patterns:
 ## 📖 Learning Path
 
 ### Week 2: Container Basics
-- [ ] Fork this repository
-- [ ] Run locally without Docker
-- [ ] Write your first Dockerfile (use ours as reference)
-- [ ] Build and run a Docker container
-- [ ] Understand multi-stage builds
+- [✅] Fork this repository
+- [✅] Run locally without Docker
+- [✅] Write your first Dockerfile (use ours as reference)
+- [✅] Build and run a Docker container
+- [✅] Understand multi-stage builds
 
 ### Week 3-4: CI/CD Pipeline
 - [ ] Set up GitHub Actions
