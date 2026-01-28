@@ -89,11 +89,11 @@ This Dockerfile showcases production-ready patterns:
 
 ## 🔒 Security Features
 
-- ✅ Non-root container user
-- ✅ Minimal attack surface (Alpine base)
-- ✅ No secrets in image (environment variables only)
-- ✅ Dependency vulnerability scanning ready
-- ✅ SBOM generation compatible
+- [ ] Non-root container user
+- [ ] Minimal attack surface (Alpine base)
+- [ ] No secrets in image (environment variables only)
+- [ ] Dependency vulnerability scanning ready
+- [ ] SBOM generation compatible
 
 ## 📖 Learning Path
 
