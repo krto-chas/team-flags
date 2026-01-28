@@ -98,20 +98,20 @@ This Dockerfile showcases production-ready patterns:
 ## 📖 Learning Path
 
 ### Week 2: Container Basics
-- [✅] Fork this repository
+- ✅ Fork this repository
 - [✅] Run locally without Docker
-- [✅] Write your first Dockerfile (use ours as reference)
+- ✅ Write your first Dockerfile (use ours as reference)
 - [✅] Build and run a Docker container
-- [✅] Understand multi-stage builds
+- ✅ Understand multi-stage builds
 
 ### Week 3-4: CI/CD Pipeline
-- [ ] Set up GitHub Actions
+- ✅ Set up GitHub Actions
 - [ ] Automate Docker builds
-- [ ] Add linting and testing
+- ✅ Add linting and testing
 - [ ] Deploy to a container registry
 
 ### Week 5-6: Security Integration
-- [ ] Add Trivy container scanning
+- ✅ Add Trivy container scanning
 - [ ] Implement dependency checks
 - [ ] Generate SBOM
 - [ ] Configure security gates

@@ -39,7 +39,7 @@ if ($List -or $TaskNumber -eq 0) {
         $task = $tasks[$i]
         if ($task -match "\[✅\]") {
             Write-Host "  $num. $task" -ForegroundColor Green
-        } elseif ($task -match "\[x\]") {
+        } elseif ($task -match "\x\") {
             Write-Host "  $num. $task" -ForegroundColor Green
         } else {
             Write-Host "  $num. $task" -ForegroundColor Yellow
@@ -68,7 +68,7 @@ if ($Undo) {
     $action = "avmarkerad"
 } else {
     # Markera: ändra [ ] till [✅]
-    $newLine = $originalLine -replace "\[ \]", "[✅]"
+    $newLine = $originalLine -replace "\[ \]", "✅"
     $action = "markerad som klar"
 }
 
